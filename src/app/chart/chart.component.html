@@ -1,0 +1,97 @@
+<!-- sub banner start  -->
+<div class="sub-banner overview-bgi">
+    <div class="container">
+        <div class="page-name">
+            <h1>Shop Cart</h1>
+        </div>
+    </div>
+    <div class="page-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="breadcrumb-area">
+                        <ul>
+                            <li><a href="index.html">Index</a></li>
+                            <li><span>/</span>Car List</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-info">
+                        <ul>
+                            <li><i class="fa fa-phone"></i> +1-8X0-666-8X88</li>
+                            <li><a href="contact-1.html" class="btn btn-md btn-theme">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sub banner end  -->
+
+<div class="shop-cart content-area-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="heading-2">
+                    <h4>Shopping Cart</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetu radipisi</p>
+                </div>
+                <table class="shop-table cart mb-20">
+                    <thead> 
+                    <tr>
+                        <th class="product-name">Car</th>
+                        <th class="product-price">Description</th>
+                        <th class="product-price">Price</th>
+                        <th class="product-quantity">Qty</th>
+                        <th class="product-subtotal">Total</th>
+                        <th class="product-remove">&nbsp;</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let car of cartItems">
+                        <td class="product-thumbnail"><img [src]="car.img[0]" alt="{{ car.name }}"></td>
+                        <td class="product-name">
+                            <a href="#">{{ car.description}}</a>
+                        </td>
+                        <td>{{ car.price }}</td>
+                        <td>
+                            <input class="qty" type="number" [(ngModel)]="car.quantity" min="1" />
+                        </td>
+                        <td>{{ (car.price * (car.quantity || 1))  }}</td>
+                        <td class="product-remove">
+                            <a (click)="removeFromCart(car)"><i class="fa fa-close"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4">
+                <div class="cart-total-box bg-light hdn-mb-30 mb-30">
+                    <h5>Cart Totals</h5>
+                    <hr>
+                    <ul>
+                        <li>
+                            Subtotal<span class="pull-right">{{ calculateSubtotal()  }}</span>
+                        </li>
+                        <li>
+                            Shipping Charge<span class="pull-right">$100.00</span>
+                        </li>
+                        <li>
+                            Local Delivery <span class="pull-right">$50.00</span>
+                        </li>
+                    </ul>
+                    <hr>
+                    <p class="mar-b-50">
+                        Grand Total<span class="pull-right">{{ calculateTotal() }}</span>
+                    </p>
+                    <br>
+                    <div class="text-center">
+                        <button class="btn btn-color btn-block btn-md text-light w-75" routerLink="/chart/check-out" type="submit">Proceed To Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

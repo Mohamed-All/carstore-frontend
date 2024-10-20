@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
+    <!-- بطاقات السيارات -->
+    <div *ngFor="let car of allCars" class="col" data-aos="fade-up">
+      <div class="card h-100 position-relative">
+        <img [src]="car.img[0]" class="card-img-top" alt="{{ car.name }}" style="object-fit: cover; height: 280px;">
+        <div class="card-body d-flex flex-column">
+          <div class="mb-auto">
+            <p class="dds">${{ car.price }}</p>
+            <h5 class="card-title" style="color: #3C5BFC;">{{ car.name }}</h5>
+            <hr>
+            <p class="card-text">{{ car.description }}</p>
+          </div>
+          <div class="d-flex justify-content-around mt-auto">
+            <button class="btn btn-sm btn-primary"  style="background-color: #3C5BFC; padding: 10px; border-radius: 30px;" (click)="addToCart(car)" routerLink="/chart">Add to Cart</button>
+            <button class="btn btn-sm btn-success" 
+            style="padding: 10px; border-radius: 30px;" 
+            [routerLink]="['/ourcars/car-details', car._id]">
+        Car Details
+    </button>
+    
+          </div>
+        </div>
+        <div class="card-footer d-flex align-items-center">
+          <div class="d-flex w-25 justify-content-evenly">
+            <i class="bi bi-gear-fill" style="color: #3C5BFC; font-size: 20px;"></i>
+            <p style="font-size: 15px; color: #535353; padding-top: 3px;">{{ car.type }}</p>
+          </div>
+          <div class="d-flex w-50 justify-content-center">
+            <i class="bi bi-car-front-fill" style="color: #3C5BFC; font-size: 20px;"></i>
+            <p style="font-size: 15px; color: #535353; padding-top: 3px; padding-left: 10px;">{{ car.brand }}</p>
+          </div>
+          <div class="d-flex w-25 justify-content-evenly">
+            <i class="bi bi-radar" style="color: #3C5BFC; font-size: 20px;"></i>
+            <p style="font-size: 15px; color: #535353; padding-top: 3px;">{{ car.km }} km</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="pagination-box d-flex justify-content-center">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link"><span aria-hidden="true">«</span></a></li>
+          <li class="page-item"><a class="page-link" routerLink="/ourcars/pageone" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" routerLink="/ourcars/pagetwo">2</a></li>
+          <li class="page-item"><a class="page-link" routerLink="/ourcars/pagethree">3</a></li>
+          <li class="page-item"><a class="page-link"><span aria-hidden="true">»</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

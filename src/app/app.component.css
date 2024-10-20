@@ -1,0 +1,47 @@
+
+.navbar-nav .nav-link 
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.logo {
+    width: 100px;
+    height: auto; 
+}
+
+.navbar-nav .nav-link {
+    position: relative; /* لجعل العنصر يحتوي على ::after */
+    color: #fff; /* لون النص الافتراضي */
+    transition: color 0.3s ease; /* تأثير التحول الناعم عند تغيير اللون */
+}
+
+.navbar-nav .nav-link::after {
+    content: ''; /* يجب إضافة هذا المحتوى الفارغ */
+    position: absolute; /* لجعل الخط أسفل النص */
+    left: 0; /* موضع الخط من اليسار */
+    bottom: 0; /* موضع الخط من الأسفل */
+    width: 100%; /* عرض الخط ليكون بنفس عرض النص */
+    height: 2px; /* سمك الخط */
+    background-color: #ffcc00; /* لون الخط */
+    transform: scaleX(0); /* بدء الخط بحجم 0 */
+    transition: transform 0.3s ease; /* تأثير التحول الناعم لحجم الخط */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; /* اللون عند التحويم */
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1); /* توسيع الخط عند التحويم */
+}
+
+/* start footer  */
+
+.navbar-text {
+    font-weight: bold; /* تجعل الخط عريض */
+    font-size: 1.2rem; /* تغيير حجم الخط */
+    color: darkgreen; /* تغيير اللون حسب تصميمك */
+}

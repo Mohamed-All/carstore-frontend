@@ -1,0 +1,225 @@
+<div class="car-details-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-xs-12 slider">
+                <div id="carDetailsSlider" class="carousel car-details-sliders slide mb-60" data-bs-ride="carousel">
+                    <!-- Main slider carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-slide-number="0">
+                            <img [src]="car.img[0]" class="img-fluid" [alt]="car.name">
+                        </div>
+                        <div class="carousel-item" data-bs-slide-number="1">
+                            <img [src]="car.img[1]" class="img-fluid" [alt]="car.name">
+                        </div>
+                        <div class="carousel-item" data-bs-slide-number="2">
+                            <img [src]="car.img[2]" class="img-fluid" [alt]="car.name">
+                        </div>
+                        <div class="carousel-item" data-bs-slide-number="3">
+                            <img [src]="car.img[3]" class="img-fluid" [alt]="car.name">
+                        </div>
+                        <div class="carousel-item" data-bs-slide-number="4">
+                            <img [src]="car.img[4]" class="img-fluid" [alt]="car.name">
+                        </div>
+                    </div>
+                    <!-- Main slider carousel nav controls -->
+                    <ul class="carousel-indicators smail-car list-inline nav nav-justified">
+                        <li class="list-inline-item active">
+                            <a id="carousel-selector-0" class="selected" data-bs-slide-to="0" data-bs-target="#carDetailsSlider">
+                                <img [src]="car.img[0]" class="img-fluid" alt="sub-car">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="carousel-selector-1" data-bs-slide-to="1" data-bs-target="#carDetailsSlider">
+                                <img [src]="car.img[1]" class="img-fluid" alt="sub-car">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="carousel-selector-2" data-bs-slide-to="2" data-bs-target="#carDetailsSlider">
+                                <img [src]="car.img[2]" class="img-fluid" alt="sub-car">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="carousel-selector-3" data-bs-slide-to="3" data-bs-target="#carDetailsSlider">
+                                <img [src]="car.img[3]" class="img-fluid" alt="sub-car">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="carousel-selector-4" data-bs-slide-to="4" data-bs-target="#carDetailsSlider">
+                                <img [src]="car.img[4]" class="img-fluid" alt="sub-car">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="heading-car">
+                        <div class="row">
+                            <div class="col-md-12 d-flex justify-content-between">
+                                <div class="pull-left">
+                                    <h3>{{car.name}}</h3>
+                                    <p><i class="fa fa-map-marker"></i>{{car.location}}</p>
+                                </div>
+                                <div class="pull-right">
+                                    <h3><span class="text-right">${{car.price}}</span></h3>
+                                    <h5>Best Seller</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="car-meta mb-60">
+                    <ul>
+                        <li>
+                            <i class="bi bi-speedometer2"></i>
+                            <p>{{ car.km }} KM</p>
+                        </li>
+                        <li>
+                            <i class="bi bi-car-front-fill"></i>
+                            <p>{{ car.brand}}</p>
+                        </li>
+                        <li>
+                            <i class="bi bi-fuel-pump"></i>
+                            <p>Gasoline</p>
+                        </li>
+                        <li>
+                            <i class="bi bi-gear-fill"></i>
+                            <p>{{car.type}}</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="car-video mb-60">
+                    <h3 class="heading">Car Description</h3>
+                    <p>{{car.description}}</p>
+                </div>
+                
+                <div class="features-opions mb-60">
+                    <h3 class="heading">Features</h3>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-speedometer2"></i>
+                                    Top Speed: 260
+                                </li>
+                                <li>
+                                    <i class="bi bi-fuel-pump"></i>
+                                    Fuel Type: Gasoline
+                                </li>
+                                <li>
+                                    <i class="bi bi-speedometer"></i> 
+                                    Mileage: {{car.km}}
+                                </li>
+                                
+                                <li>
+                                    <i class="bi bi-gear"></i>
+                                    Engine: 2901
+                                </li>
+                                <li>
+                                    <i class="bi bi-gear-fill"></i>
+                                    Gear: 5-speed Automatic
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-car-front-fill"></i>
+                                    Body Style:{{car.type}}
+                                </li>
+                                <li>
+                                    <i class="bi bi-calendar3"></i>
+                                    Year: {{car.model}}
+                                </li>
+                                <li>
+                                    <i class="bi bi-palette"></i>
+                                    Interior Color: all color avaliable
+                                </li>
+                                <li>
+                                    <i class="bi bi-lightning-charge"></i>
+                                    Horse Power: 310
+                                </li>
+                                <li>
+                                    <i class="bi bi-door-closed"></i>
+                                    Doors: 4
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-geo-alt"></i>
+                                    Location: {{car.location}}
+                                </li>
+                                <li>
+                                    <i class="bi bi-wrench"></i>
+                                    Free Services
+                                </li>
+                                <li>
+                                    <i class="bi bi-palette"></i>
+                                    Interior Color: Black
+                                </li>
+                                <li>
+                                    <i class="bi bi-lightning"></i>
+                                    Electric Range
+                                </li>
+                                <li>
+                                    <i class="bi bi-droplet-half"></i>
+                                    Oil Changes
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+            <!-- Placeholder for right side content -->
+            <div class="col-lg-4 col-md-12">
+
+                <div class="sidebar mbl">
+                    <!-- Specifications start -->
+                    <div class="specifications widget d-none d-xl-block d-lg-block">
+                        <h5 class="sidebar-title">Specifications</h5>
+                        <ul>
+                            <li>
+                                <span>Brand</span>{{car.brand}}
+                            </li>
+                            <li>
+                                <span>Name</span>{{car.name}}
+                            </li>
+                            <li>
+                                <span>Model</span>{{car.model}}
+                            </li>
+                            <li>
+                                <span>KM</span>{{car.km}}
+                            </li>
+                            <li>
+                                <span>Price</span>{{car.price}}
+                            </li>
+                            <li>
+                                <span>Location</span>{{car.location}}
+                            </li>
+                            <li>
+                                <span>Type</span>{{car.type}}
+                            </li>
+                     
+                        </ul>
+                    </div>
+                    <!-- Social list start -->
+                    <div class="social-list widget clearfix">
+                        <h5 class="sidebar-title">Follow Us</h5>
+                        <ul>
+                            <li><a href="https://www.facebook.com/profile.php?id=61558366100244" target="_blank" class="facebook-bgh"><i class="bi bi-facebook"></i></a></li>
+                      <li><a href="https://wa.me/201033282165" target="_blank" class="whatsapp-bgh"><i class="bi bi-whatsapp"></i></a></li>
+                      <li><a href="https://www.instagram.com/mohamedalli9090/profilecard/?igsh=a3d3djcybzRlcmtl" target="_blank" class="instagram-bgh"><i class="bi bi-instagram"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/mohamed-ali-996254247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"  class="linkedin-bgh"><i class="bi bi-linkedin"></i></a></li>
+                 
+                        </ul>
+                    </div>
+             
+            </div>
+        </div>
+    </div>
+</div>

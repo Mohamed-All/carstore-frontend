@@ -1,0 +1,158 @@
+.content-area-2 {
+    padding: 100px 0 70px;
+}
+
+.mrb {
+    margin: 0 0 50px 0;
+}
+
+.widget {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 30px 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search-area .form-group label, .checkbox label {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+.form-group label, .checkbox label {
+    font-size: 15px;
+    color: #535353;
+}
+
+.search-area .search-fields {
+    min-height: 45px;
+    padding: 5px 5px 2px 0;
+    box-shadow: none;
+    border: 1px solid #cdcbcb;
+    background: #fff;
+    border-radius: 3px;
+    width: 100% !important;
+    cursor: pointer;
+}
+
+.search-area .selectBox-dropdown .selectBox-label {
+    padding: 2px 15px;
+    display: initial;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 37px;
+    font-size: 15px;
+    color: #888;
+    font-weight: 400;
+}
+
+.search-area .selectBox-dropdown .selectBox-arrow {
+    text-align: center;
+    width: 36px;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 100%;
+    border-left: none;
+}
+
+.search-area .selectBox-dropdown .selectBox-arrow:before {
+    font: normal normal normal 14px / 1 FontAwesome;
+    content: "\f078";
+    line-height: 44px;
+    color: #777;
+    font-size: 12px;
+}
+
+.categories ul li {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.categories ul li span {
+    float: right;
+}
+
+/* car feeature start  */
+.ground-feature
+{
+    background-color: white;
+    margin-bottom: 35px;
+}
+.heading-feature
+{
+    padding-top: 80px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.dds
+{
+    position: absolute;
+    right: 0;
+    color:white ;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 10px 6px 15px;
+    border-radius: 50px 0 0 50px;
+    background-color:#3c5bfc;
+    z-index: 20;
+}
+.card-img-top {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1); 
+  }
+  .card {
+    overflow: hidden;
+  }
+
+
+  .pagination-box {
+    margin-bottom: 25px;
+}
+.pagination {
+    padding-left: 0;
+    border-radius: 4px;
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.pagination > li > a {
+    color: #3c5bfc;
+}
+
+.pagination > li > a, .pagination > li > span {
+    border-radius: 50px;
+    margin: 0 5px 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    line-height: 50px;
+    border: none;
+    font-size: 20px;
+}
+.pagination > li > a:hover {
+   background-color: #3c5bfc;
+   color: white;
+}

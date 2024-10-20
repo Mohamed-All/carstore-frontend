@@ -1,0 +1,79 @@
+.page_loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./banner-3.jpg') center no-repeat #fff;
+}
+
+.contact-section {
+    background: url('./banner-3.jpg') top left repeat;
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.overview-bgi {
+    position: relative;
+}
+
+.overview-bgi:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* تأثير الظل */
+    z-index: 0; 
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1; /* جعل النموذج فوق الخلفية */
+}
+
+.cm-logo {
+    width: 120px; /* تعديل حجم اللوغو */
+    margin-bottom: 20px; /* مسافة بين اللوغو والنموذج */
+    position: relative; /* جعل اللوغو في مستوى أعلى من الخلفية */
+    z-index: 2; /* التأكد من أن اللوغو فوق الخلفية */
+}
+
+/* شكل النموذج */
+.form-content {
+    width: 300px; /* حجم أصغر للنموذج */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* إضافة ظل للنموذج */
+    border-radius: 10px; /* حدود مستديرة */
+    background-color: white; /* خلفية بيضاء للنموذج لضمان وضوح العناصر */
+    position: relative; /* تأكيد أن النموذج في نفس مستوى العنصر الأب */
+    z-index: 2; /* تأكيد أن النموذج فوق الخلفية */
+}
+
+.form-control-sm {
+    font-size: 0.875rem; /* حجم الخط أصغر */
+    border-radius: 5px; /* حدود مستديرة أصغر */
+}
+
+/* زر التقديم */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

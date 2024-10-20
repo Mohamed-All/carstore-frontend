@@ -1,0 +1,145 @@
+.sub-banner {
+    background: rgba(0, 0, 0, 0.04) url('banner-3.jpg') top left repeat;
+    background-size: cover;
+    height: 355px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(36, 42, 53, 0.7);
+}
+.overview-bgi {
+    position: relative;
+}
+.overview-bgi:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.sub-banner .page-name {
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.sub-banner .page-name h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.sub-banner .page-info {
+    bottom: 20px;
+    letter-spacing: normal;
+    position: absolute;
+    z-index: 20;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+}
+.sub-banner .page-info .breadcrumb-area ul li a {
+    color: #fff;
+}
+a {
+    transition: all .3s ease-in-out;
+}
+a {
+    color: #37404d;
+    text-decoration: none;
+}
+.sub-banner .page-info .breadcrumb-area ul li {
+    display: inline-block;
+    line-height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+.sub-banner .page-info .breadcrumb-area ul li span {
+    margin: 0 5px;
+    color: #fff;
+}
+.sub-banner .page-info .contact-info {
+    text-align: right;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+}
+.sub-banner .page-info .contact-info ul li {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+}
+.sub-banner .btn-theme {
+    padding: 11px 35px 10px;
+    margin-left: 20px;
+    border-radius: 70px;
+}
+
+.btn-theme {
+    color: #FFF !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-theme {
+    background: #3c5bfc;
+    border: solid 1px #3c5bfc;
+}
+
+/* start all thing  */
+
+  /* .mar
+  {
+    margin-top: 50px;
+  } */
+
+  .pagination-box {
+    margin-bottom: 25px;
+}
+.pagination {
+    padding-left: 0;
+    border-radius: 4px;
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.pagination > li > a {
+    color: #3c5bfc;
+}
+
+.pagination > li > a, .pagination > li > span {
+    border-radius: 50px;
+    margin: 0 5px 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    line-height: 50px;
+    border: none;
+    font-size: 20px;
+}
+.pagination > li > a:hover {
+   background-color: #3c5bfc;
+   color: white;
+}

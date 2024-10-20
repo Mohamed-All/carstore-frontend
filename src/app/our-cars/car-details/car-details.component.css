@@ -1,0 +1,317 @@
+.car-details-page
+{
+    padding: 100px 0 70px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.img-fluid {
+    max-width: 100% !important;
+    height: auto;
+}
+
+.car-details-sliders .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+    margin-top: 0;
+}
+.car-details-sliders .list-inline {
+    white-space: nowrap;
+    width: 100% !important;
+}
+.smail-car {
+    width: 100%;
+}
+.car-details-sliders .carousel-indicators > li {
+    height: initial;
+    text-indent: initial;
+    margin-right: 0;
+    margin-left: 0;
+}
+.carousel-indicators .active {
+    background-color: #3c5bfc;
+}
+.smail-car .list-inline-item {
+    width: 20%;
+}
+.car-details-sliders .carousel-indicators > li.active img {
+    opacity: 0.7;
+}
+.smail-car .list-inline-item a img {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+.car-details-sliders .carousel-indicators a {
+    cursor: pointer;
+}
+.smail-car .list-inline-item a img {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.carousel-indicators li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+.carousel-indicators li::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.heading-car {
+    letter-spacing: 1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.heading-car {
+    margin-bottom: 15px;
+}
+.pull-left {
+    float: left;
+}
+.heading-car h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #fff;
+}
+.heading-car h3 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.heading-car p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 15px;
+}
+.pull-right {
+    float: right;
+}
+.heading-car h3 span {
+    color: #3c5bfc;
+}
+
+.heading-car h3 span {
+    font-weight: 700;
+}
+.heading-car h5 {
+    text-align: right;
+    color: #fff;
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 500px; /* تعيين ارتفاع ثابت */
+    object-fit: cover; /* لضبط الصورة دون تشويه */
+}
+.carousel-indicators img {
+    width: 100px; /* عرض ثابت للصور المصغرة */
+    height: 100px; /* ارتفاع ثابت للصور المصغرة */
+    object-fit: cover; /* لضبط الصورة داخل الحاوية */
+    border: none; /* إزالة الحدود */
+}
+.carousel-indicators {
+    justify-content: center; /* محاذاة المصغرات للوسط */
+}
+.carousel-indicators .list-inline-item {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px; /* تعيين ارتفاع أقل للشاشات الصغيرة */
+    }
+
+    .carousel-indicators img {
+        width: 60px; /* تقليل حجم الصور المصغرة */
+        height: 60px;
+    }
+}
+
+/* تحسين حجم الصور الرئيسية على الشاشات الصغيرة جداً */
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 200px; /* تعيين ارتفاع أصغر للشاشات الأصغر */
+    }
+
+    .carousel-indicators img {
+        width: 50px; /* تقليل حجم الصور المصغرة */
+        height: 50px;
+    }
+}
+
+
+.car-meta {
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+}
+.car-meta ul li {
+    width: 24%;
+    display: inline-block;
+}
+.car-meta ul li i {
+    color: #3c5bfc;
+}
+.car-meta ul li i {
+    font-size: 30px;
+}
+.car-meta p {
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 26px;
+    color: #535353;
+}
+
+
+
+.mbl {
+    margin: 0 0 30px 0;
+}
+
+.widget {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 30px 25px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+}
+.sidebar-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+}
+.specifications ul li {
+    list-style: none;
+    padding: 10px 0;
+    color: #535353;
+    border-bottom: 1px dotted #DDD;
+    text-align: right;
+    font-size: 14px;
+}
+.specifications ul span {
+    margin-right: 10px;
+    float: left;
+    font-weight: 600;
+}
+.sidebar-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+.sidebar .social-list li {
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    padding-left: 10px;
+}
+.sidebar .social-list li a {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+   
+    margin: 2px 4px 2px 0;
+    border-radius: 0%;
+}
+.facebook-bg {
+    background: #4867aa;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+.car-details-page .heading {
+    margin-bottom: 25px;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #535353;
+}
+
+
+/* car featurs  */
+.car-details-page .heading {
+    margin-bottom: 25px;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+}
+.features-opions ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    color: #5a5959;
+    font-size: 15px;
+}
+.features-opions ul li i {
+    color: #3c5bfc;
+}
+.features-opions ul li i {
+    left: 0;
+    position: absolute;
+    top: 0;
+}

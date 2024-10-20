@@ -1,0 +1,262 @@
+.sub-banner {
+    background: rgba(0, 0, 0, 0.04) url('banner-3.jpg') top left repeat;
+    background-size: cover;
+    height: 355px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(36, 42, 53, 0.7);
+}
+.overview-bgi {
+    position: relative;
+}
+.overview-bgi:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.sub-banner .page-name {
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.sub-banner .page-name h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.sub-banner .page-info {
+    bottom: 20px;
+    letter-spacing: normal;
+    position: absolute;
+    z-index: 20;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+}
+.sub-banner .page-info .breadcrumb-area ul li a {
+    color: #fff;
+}
+a {
+    transition: all .3s ease-in-out;
+}
+a {
+    color: #37404d;
+    text-decoration: none;
+}
+.sub-banner .page-info .breadcrumb-area ul li {
+    display: inline-block;
+    line-height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+.sub-banner .page-info .breadcrumb-area ul li span {
+    margin: 0 5px;
+    color: #fff;
+}
+.sub-banner .page-info .contact-info {
+    text-align: right;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+}
+.sub-banner .page-info .contact-info ul li {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+}
+.sub-banner .btn-theme {
+    padding: 11px 35px 10px;
+    margin-left: 20px;
+    border-radius: 70px;
+}
+
+.btn-theme {
+    color: #FFF !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-theme {
+    background: #3c5bfc;
+    border: solid 1px #3c5bfc;
+}
+
+/* start all thing  */
+
+  /* .mar
+  {
+    margin-top: 50px;
+  } */
+
+  .pagination-box {
+    margin-bottom: 25px;
+}
+.pagination {
+    padding-left: 0;
+    border-radius: 4px;
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.pagination > li > a {
+    color: #3c5bfc;
+}
+
+.pagination > li > a, .pagination > li > span {
+    border-radius: 50px;
+    margin: 0 5px 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    line-height: 50px;
+    border: none;
+    font-size: 20px;
+}
+.pagination > li > a:hover {
+   background-color: #3c5bfc;
+   color: white;
+}
+
+
+/*  */
+
+.content-area-2 {
+    padding: 100px 0 70px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #535353;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+}
+.shop-table.cart .product-thumbnail, .shop-table.cart .product-name {
+    padding-left: 0;
+}
+.shop-table.cart td, .shop-table.cart th {
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.shop-table th {
+    padding: 15px 0;
+    border: none;
+}
+.shop-table td {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+.shop-table.cart .product-thumbnail img {
+    width: 100px;
+}
+
+a {
+    color: #37404d;
+    text-decoration: none;
+}
+.shop-table.cart .qty {
+    width: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+.shop-table.cart .product-remove {
+    padding-right: 0;
+}
+.cart-total-box {
+    padding: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+.cart-total-box h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #37404d;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+}
+.cart-total-box ul li {
+    line-height: 33px;
+    width: 100%;
+    font-size: 15px;
+}
+.cart-total-box ul li span {
+    margin-right: 0;
+}
+
+.cart-total-box .btn {
+    padding: 10px 20px 10.5px;
+}
+.btn-md {
+    cursor: pointer;
+    padding: 10.5px 30px 10px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.btn-color {
+    background: #3c5bfc;
+    border-color: #3c5bfc;
+}
+.btn-block + .btn-block {
+    margin-top: .5rem;
+}
+
+.cart-total-box ul li {
+    line-height: 33px;
+    width: 100%;
+    font-size: 15px;
+}
+.cart-total-box ul li span {
+    margin-right: 0;
+}
+.pull-right {
+    float: right;
+}
